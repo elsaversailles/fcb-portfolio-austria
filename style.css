@@ -1,0 +1,74 @@
+/*
+
+	add comment in css = ctrl + shift + /
+
+	syntax
+
+	* (selector) { declaration block| property: value; } sans-serif is fall back font
+
+	* = universal selector
+*/
+
+/*universal*/
+* { 
+	font-family: "Roboto", sans-serif;
+}
+
+/*type selector*/
+h1,h2 {
+	font-family: "Montserrat", sans-serif;
+}
+
+
+img {
+	height: 250px; 
+	width:  250px;
+}
+
+/*id selector =  #idName from html*/
+#landing {
+	/*vh = viewport height, measures height of webpage  and the device you're currently vieweing the page in.*/
+	height:  80vh;
+	/*manipulate contents of elemen using flexbox*/
+	/*by defau;t, arranges content of elements in a row*/
+	display:  flex;
+	/*arrange contents of an element within flex as a collumn*/
+	flex-direction:  column;
+	/*center all elements as a column with flex as column horizontally*/
+	align-items:  center;
+	/*center all contents of element w/ flex as column as vertical*/
+	justify-content: center;
+}
+
+#gallery {
+	height: 75vh;
+	/*center contents of gallery section horizontally and vertically using flex box*/
+	display:  flex;
+	flex-direction: column;
+	align-items:  center;
+	justify-content: center;
+}
+
+/* object selector */
+ul {
+	list-style: none;
+	padding:  0;
+}
+
+h2 {
+	color:  #007bff;
+}
+
+/*class selector = .className*/
+.tools {
+	border:  5px solid #f2f2f2;
+	padding: 25px;
+	margin: 20px;
+	height: 200px;
+	/*the width of this element is atleast 75% of its parent element or the element that contains it.*/
+	width:  75%;
+}
+
+html {
+	scroll-behavior: smooth;
+}
